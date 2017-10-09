@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/sViewId"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@mipmap/profile_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!--<com.my.zhou.group.utils.CircleImageView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--app:border_color="#ffffffff"-->
+                <!--app:border_width="2dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@mipmap/userhomeimg"-->
+                <!--android:id="@+id/circleImageView" />-->
+                <!--android:src="@drawable/gg"-->
+
+                <com.my.zhou.group.utils.CircularImage
+                    android:id="@+id/circleImageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="24dp"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:id="@+id/linear_loginId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:id="@+id/text_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="请登录"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="136xxxx1856"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/right1" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linear_shenqing"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.my.zhou.group.view.DrawableCenterButton
+                android:id="@+id/drawablebtn_shenqing"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_common_btn_selector"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="申  请"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liear_shenqing_ok"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></View>
+
+            <TextView
+                android:id="@+id/text_open_true"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_shape_05"
+                android:gravity="center"
+                android:text="开工"
+                android:textColor="@color/rg_orange"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></View>
+
+            <TextView
+                android:id="@+id/text_open_false"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_shape_05"
+                android:gravity="center"
+                android:text="忙碌"
+                android:textColor="@color/rg_orange"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></View>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/rg_line"></View>
+
+        <include
+            layout="@layout/sliding_item_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></include>
+
+
+    </LinearLayout>
+
+    <com.my.zhou.group.view.DrawableCenterButton
+        android:id="@+id/drawablebtn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_common_btn_selector"
+        android:clickable="true"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="退出当前登录"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rela_sliding_money"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/money_icon"
+            android:gravity="center"
+            android:text="我的余额"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/rg_line"></View>
+
+    <RelativeLayout
+        android:id="@+id/rela_sliding_notifi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/text_sliding_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/notification"
+            android:gravity="center"
+            android:text="系统通知"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/rg_line"></View>
+
+    <RelativeLayout
+        android:id="@+id/rela_sliding_jiesuan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/jiesuan"
+            android:gravity="center"
+            android:text="结算明细"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/rg_line"></View>
+
+    <RelativeLayout
+        android:id="@+id/rela_sliding_history"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/lishi"
+            android:gravity="center"
+            android:text="历史订单"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/rg_line"></View>
+
+    <RelativeLayout
+        android:id="@+id/rela_sliding_help"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/bangzhu"
+            android:gravity="center"
+            android:text="帮助中心"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/rg_line"></View>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.my.zhou.group.Order1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_order_head"></include>
+
+        <include layout="@layout/include_order_item1"></include>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/order_put_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_put_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/backgroup_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="确定送达"
+            android:textColor="@color/white"
+            android:textSize="17.0sp" />
+
+        <RadioButton
+            android:id="@+id/btn_put_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/backgroup_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="联系商家"
+            android:textColor="@color/white"
+            android:textSize="17.0sp" />
+    </RadioGroup>
+</RelativeLayout>
