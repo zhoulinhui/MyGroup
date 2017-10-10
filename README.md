@@ -9,17 +9,13 @@ png文件夹下有截图文件 自行查看
 
 -------------------
 
-**Step 1.** Add the JitPack repository to your build file Add it in your root build.gradle at the end of repositories: 
+**Step 1.**  A_A
 ```gradle
-allprojects { repositories { ... maven { url 'https://jitpack.io' } } }
-```
 
-**Step 2.** Add the dependency
+**Step 2.**  B_B
 ```gradle
-dependencies { compile 'com.github.MZCretin:ExternalMapUtils:v1.0.0' }
-```
 
-**Step 3.** Start using it wherever you want as below.
+**Step 3.** C_C
 
 ```
 
